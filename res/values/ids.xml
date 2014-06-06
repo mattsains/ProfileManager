@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<!-- Preference key names -->
-	
-	    
+
+    <!-- Background intent codes -->
+    <item name="profile_change_silent" type="id"/>
+    <item name="profile_change_normal" type="id"/>
+
 </resources>

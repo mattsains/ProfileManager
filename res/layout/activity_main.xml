@@ -1,13 +1,11 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="net.za.sainsbury.profilemanager.MainActivity"
-    tools:ignore="MergeRootFrame" >
-<ScrollView
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
+    tools:ignore="MergeRootFrame"
     >
 	
     <LinearLayout
@@ -53,5 +51,3 @@
     </LinearLayout>
 
 </ScrollView>
-</FrameLayout>
-

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Profile Manager</string>
+    <string name="action_settings">Settings</string>
+    <string name="silent_label">Silent time:</string>
+    <string name="normal_label">Normal time:</string>
+    <string name="apply_button">Apply</string>
+    
+    <!--  Preference key names? -->
+    
+    
+    <!--  default time settings -->
+	<integer name="silent_default_hour">22</integer>
+	<integer name="silent_default_minute">00</integer>
+	<integer name="normal_default_hour">6</integer>
+	<integer name="normal_default_minute">00</integer>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<!-- Preference key names -->
+	<item name="silent_pref_hour" type="id" />
+	<item name="silent_pref_minute" type="id" />
+	<item name="normal_pref_hour" type="id" />
+	<item name="normal_pref_minute" type="id" />
+	    
+</resources>

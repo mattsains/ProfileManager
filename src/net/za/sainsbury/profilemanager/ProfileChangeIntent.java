@@ -87,10 +87,10 @@ public class ProfileChangeIntent extends WakefulBroadcastReceiver {
 				.getSystemService(Context.AUDIO_SERVICE);
 		if (changeType.equals(context
 				.getString(R.string.profile_change_to_normal))) {
-			message = "Changed to normal profile";
+			message = context.getString(R.string.normal_notify);
 			am.setRingerMode(AudioManager.RINGER_MODE_NORMAL);
 		} else {
-			message = "Changed to silent profile";
+			message = context.getString(R.string.silent_notify);
 			am.setRingerMode(AudioManager.RINGER_MODE_SILENT);
 		}
 

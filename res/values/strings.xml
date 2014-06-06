@@ -6,7 +6,11 @@
     <string name="silent_label">Silent time:</string>
     <string name="normal_label">Normal time:</string>
     <string name="apply_button">Apply</string>
-
+	
+    <string name="apply_confirm">Profiles will be automatically switched!</string>
+    <string name="normal_notify">Changed to normal profile</string>
+    <string name="silent_notify">Changed to silent profile</string>
+    
     <!-- preference database name -->
     <string name="preference_location">net.za.sainsbury.preferences</string>
 

@@ -1,10 +1,12 @@
 package net.za.sainsbury.profilemanager;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.format.Time;
 import android.view.View;
 import android.widget.TimePicker;
+import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 	@Override
@@ -28,6 +30,8 @@ public class MainActivity extends ActionBarActivity {
 	}
 
 	public void Apply_Click(View view) {
+		Context context=getApplicationContext();
+		
 		TimePicker silent = (TimePicker) findViewById(R.id.silent_time);
 		TimePicker normal = (TimePicker) findViewById(R.id.normal_time);
 
@@ -36,6 +40,9 @@ public class MainActivity extends ActionBarActivity {
 		ProfilePreferences.setNormalTime(normal.getCurrentHour(),
 				normal.getCurrentMinute());
 
-		ProfileChangeIntent.StartDaemon(getApplicationContext());
+		ProfileChangeIntent.StartDaemon(context);
+		
+		Toast t=Toast.makeText(context, context.getString(R.string.apply_confirm) , Toast.LENGTH_SHORT);
+		t.show();
 	}
 }

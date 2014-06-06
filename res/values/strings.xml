@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
-    <string name="app_name">Profile Manager</string>
-    <string name="action_settings">Settings</string>
+    <string name="app_name" tools:ignore="MissingTranslation">Profile Manager</string>
     <string name="silent_label">Silent time:</string>
     <string name="normal_label">Normal time:</string>
     <string name="apply_button">Apply</string>

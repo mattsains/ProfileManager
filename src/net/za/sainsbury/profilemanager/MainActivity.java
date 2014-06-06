@@ -2,7 +2,6 @@ package net.za.sainsbury.profilemanager;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.inputmethodservice.KeyboardView;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.text.format.Time;
@@ -29,12 +28,12 @@ public class MainActivity extends ActionBarActivity {
 		TimePicker normal=(TimePicker)findViewById(R.id.normal_time);
 		
 		Time silent_time=new Time();
-		silent_time.hour=preferences.getInt(getString(R.id.silent_pref_hour), silent_default_hour);
-		silent_time.minute=preferences.getInt(getString(R.id.silent_pref_minute), silent_default_minute);
+		silent_time.hour=preferences.getInt(getString(R.string.silent_pref_hour), silent_default_hour);
+		silent_time.minute=preferences.getInt(getString(R.string.silent_pref_minute), silent_default_minute);
 		
 		Time normal_time=new Time();
-		normal_time.hour=preferences.getInt(getString(R.id.normal_pref_hour), normal_default_hour);
-		normal_time.minute=preferences.getInt(getString(R.id.normal_pref_minute), normal_default_minute);
+		normal_time.hour=preferences.getInt(getString(R.string.normal_pref_hour), normal_default_hour);
+		normal_time.minute=preferences.getInt(getString(R.string.normal_pref_minute), normal_default_minute);
 		
 		
 		silent.setCurrentHour(silent_time.hour);
@@ -50,10 +49,10 @@ public class MainActivity extends ActionBarActivity {
 		
 		SharedPreferences.Editor editor=preferences.edit();
 		
-		editor.putInt(getString(R.id.silent_pref_hour), silent.getCurrentHour());
-		editor.putInt(getString(R.id.silent_pref_minute), silent.getCurrentMinute());
-		editor.putInt(getString(R.id.normal_pref_hour), normal.getCurrentHour());
-		editor.putInt(getString(R.id.normal_pref_minute), normal.getCurrentMinute());
+		editor.putInt(getString(R.string.silent_pref_hour), silent.getCurrentHour());
+		editor.putInt(getString(R.string.silent_pref_minute), silent.getCurrentMinute());
+		editor.putInt(getString(R.string.normal_pref_hour), normal.getCurrentHour());
+		editor.putInt(getString(R.string.normal_pref_minute), normal.getCurrentMinute());
 		
 		editor.commit();
 	}

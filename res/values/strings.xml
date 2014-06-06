@@ -8,7 +8,10 @@
     <string name="apply_button">Apply</string>
     
     <!--  Preference key names? -->
-    
+    <string name="silent_pref_hour">pref.silent.hour</string>
+	<string name="silent_pref_minute">pref.silent.minute</string>
+	<string name="normal_pref_hour">pref.normal.hour</string>
+	<string name="normal_pref_minute">pref.normal.minute</string>
     
     <!--  default time settings -->
 	<integer name="silent_default_hour">22</integer>
